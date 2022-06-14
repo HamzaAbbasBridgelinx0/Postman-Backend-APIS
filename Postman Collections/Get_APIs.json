@@ -514,14 +514,22 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "getAllBilty_ops",
 			"id": "fba3093a-5ca8-47a5-b571-2b805d30a9a7",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query GetAllBilty_ops {\r\n  getAllBilty_ops {\r\n    _id\r\n    isBlocked\r\n    User {\r\n      _id\r\n      firstName\r\n      lastName\r\n      phoneNumber\r\n      email\r\n      profileImage\r\n      cnic\r\n      UserType {\r\n        _id\r\n        userType\r\n      }\r\n      EditHistory {\r\n        foreign_id\r\n        tableName\r\n        userName\r\n        action\r\n        oldValues\r\n        newValues\r\n        updatedColumns\r\n        createdAt\r\n      }\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": "{{url}}"
 			},
 			"response": []
 		}
