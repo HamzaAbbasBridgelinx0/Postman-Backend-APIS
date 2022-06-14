@@ -7,7 +7,7 @@
 	"item": [
 		{
 			"name": "getAllUsers",
-			"_postman_id": "f4ecfe15-dbd4-43c4-825e-a5562be66b49",
+			"id": "f4ecfe15-dbd4-43c4-825e-a5562be66b49",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -19,9 +19,6 @@
 					"graphql": {
 						"query": "query GetAllUsers { \r\n    getAllUsers {\r\n    _id\r\n    firstName\r\n    lastName\r\n    phoneNumber\r\n    email\r\n    profileImage\r\n    \r\n    cnic\r\n    UserType {\r\n      _id\r\n      userType\r\n    }\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
 						"variables": ""
-					},
-					"options": {
-						"graphql": {}
 					}
 				},
 				"url": "{{url}}"
@@ -30,7 +27,7 @@
 		},
 		{
 			"name": "getAllBrokers",
-			"_postman_id": "07ae4e69-214a-40d1-a26d-69695cb55a39",
+			"id": "07ae4e69-214a-40d1-a26d-69695cb55a39",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -42,9 +39,6 @@
 					"graphql": {
 						"query": "query Query {\r\n  getAllBrokers {\r\n    _id\r\n    containerDimensions\r\n    isBlocked\r\n    type\r\n    platformInfo {\r\n      versionCode\r\n      versionName\r\n      userPlatform\r\n    }\r\n    isSuspended\r\n    truckAdda\r\n    linkedSuppliers {\r\n      _id\r\n    }\r\n    Drivers {\r\n      _id\r\n    }\r\n    notifToken\r\n    User {\r\n      _id\r\n      firstName\r\n      lastName\r\n      phoneNumber\r\n    }\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
 						"variables": ""
-					},
-					"options": {
-						"graphql": {}
 					}
 				},
 				"url": "{{url}}"
@@ -101,7 +95,7 @@
 					}
 				}
 			],
-			"_postman_id": "6b311e14-2483-4ff4-877c-b0424a2798f6",
+			"id": "6b311e14-2483-4ff4-877c-b0424a2798f6",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -113,9 +107,6 @@
 					"graphql": {
 						"query": "query GetAllClients {\r\n  getAllClients {\r\n     _id\r\n    Corporate {\r\n      clearingAgents {\r\n        name\r\n        phoneNumber\r\n      }\r\n      _id\r\n      businessCode\r\n      businessName\r\n      sector\r\n    }\r\n    position\r\n    department\r\n    versionCode\r\n    versionName\r\n    User {\r\n      _id\r\n      firstName\r\n      lastName\r\n      phoneNumber\r\n      email\r\n      profileImage\r\n      cnic\r\n      UserType {\r\n        _id\r\n        userType\r\n      }\r\n      EditHistory {\r\n        foreign_id\r\n        tableName\r\n        userName\r\n        action\r\n        oldValues\r\n        newValues\r\n        updatedColumns\r\n        createdAt\r\n      }\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
 						"variables": ""
-					},
-					"options": {
-						"graphql": {}
 					}
 				},
 				"url": "{{url}}"
@@ -124,7 +115,7 @@
 		},
 		{
 			"name": "getAllDriverStatusHistory",
-			"_postman_id": "14b86755-12f8-4fb2-b8ea-cf846921c807",
+			"id": "14b86755-12f8-4fb2-b8ea-cf846921c807",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -136,9 +127,6 @@
 					"graphql": {
 						"query": "query GetAllDriverStatusHistory {\r\n  getAllDriverStatusHistory {\r\n    _id\r\n    OrderId\r\n    DriverStatusJourneys {\r\n      _id\r\n      User {\r\n        _id\r\n        firstName\r\n        lastName\r\n        phoneNumber\r\n        UserType {\r\n          _id\r\n          userType\r\n        }\r\n        createdAt\r\n      }\r\n      type\r\n      coordinates {\r\n        lat\r\n        lng\r\n      }\r\n      formattedAddress\r\n      status\r\n      comment\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    createdBy {\r\n      _id\r\n      firstName\r\n      lastName\r\n      phoneNumber\r\n      email\r\n      profileImage\r\n      notifToken\r\n      cnic\r\n      UserType {\r\n        _id\r\n        userType\r\n      }\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    status\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
 						"variables": ""
-					},
-					"options": {
-						"graphql": {}
 					}
 				},
 				"url": "https://backend.dev.bridgelinxpk.com/graphql"
@@ -147,7 +135,7 @@
 		},
 		{
 			"name": "getAllDriverStatusJourney",
-			"_postman_id": "6aefd3da-5e36-4b23-9d91-0cae8a84199e",
+			"id": "6aefd3da-5e36-4b23-9d91-0cae8a84199e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -159,9 +147,6 @@
 					"graphql": {
 						"query": "query GetAllDriverStatusJourney {\r\n  getAllDriverStatusJourney {\r\n    _id\r\n    type\r\n    User {\r\n      _id\r\n      firstName\r\n      lastName\r\n      phoneNumber\r\n      createdAt\r\n      UserType {\r\n        userType\r\n        _id\r\n      }\r\n    }\r\n    formattedAddress\r\n    coordinates {\r\n      lat\r\n      lng\r\n    }\r\n    status\r\n    comment\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
 						"variables": ""
-					},
-					"options": {
-						"graphql": {}
 					}
 				},
 				"url": "https://backend.dev.bridgelinxpk.com/graphql"
@@ -170,7 +155,7 @@
 		},
 		{
 			"name": "getAllImportExport",
-			"_postman_id": "8d5ba41c-2213-4efb-84c9-2f23c2826807",
+			"id": "8d5ba41c-2213-4efb-84c9-2f23c2826807",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -182,9 +167,6 @@
 					"graphql": {
 						"query": "query GetAllImportExport {\r\n  getAllImportExport {\r\n    _id\r\n    bilty {\r\n      biltyDate\r\n      biltyDocument\r\n      biltyNumber\r\n      isInformationComplete\r\n      kantaDocument\r\n      lcNumber\r\n      loloDocument\r\n      seal\r\n    }\r\n    Broker {\r\n      _id\r\n      createdAt\r\n      isBlocked\r\n      isSuspended\r\n      truckAdda\r\n      linkedSuppliers {\r\n        _id\r\n      }\r\n    }\r\n    businessCode\r\n    clearingAgents {\r\n      phoneNumber\r\n      name\r\n    }\r\n    clientEmails\r\n    Client {\r\n      _id\r\n      Corporate {\r\n        _id\r\n        businessCode\r\n        businessName\r\n      }\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    Corporate {\r\n      businessCode\r\n      businessName\r\n      _id\r\n      freightType\r\n      updateEmail\r\n      corporateId\r\n    }\r\n    ContainerInfos {\r\n      _id\r\n      document\r\n      documentNumber\r\n      dimension\r\n      containerNumber\r\n      terminal {\r\n        formattedAddress\r\n        coordinates {\r\n          lat\r\n          lng\r\n        }\r\n        returnDT\r\n        contacts {\r\n          name\r\n          phoneNumber\r\n        }\r\n      }\r\n      freightType\r\n      freightWeight\r\n      OrderId\r\n      shippingLine\r\n    }\r\n    cost\r\n    createdBy\r\n    driver {\r\n      name\r\n      phoneNumber\r\n      vehicleRegistrationNumber\r\n      \r\n    }\r\n    driverAddedBy {\r\n      addedAt\r\n      addedBy {\r\n        _id\r\n        firstName\r\n        lastName\r\n        source\r\n      }\r\n    }\r\n    driverAssignedBy {\r\n      assignedAt\r\n      firstName\r\n      lastName\r\n      source\r\n      profileID\r\n    }\r\n    DriverStatusHistories {\r\n      _id\r\n      OrderId\r\n      DriverStatusJourneys {\r\n        _id\r\n        \r\n       UserId\r\n        formattedAddress\r\n        status\r\n        comment\r\n        createdAt\r\n        updatedAt\r\n      }\r\n      createdBy {\r\n        _id\r\n        firstName\r\n        lastName\r\n        phoneNumber\r\n        email\r\n        cnic\r\n        UserType {\r\n          _id\r\n          userType\r\n        }\r\n        createdAt\r\n      }\r\n      status\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    PotentialDriver {\r\n      _id\r\n      BrokerId\r\n      SupplierId\r\n    }\r\n    doInfo {\r\n      client\r\n      clearingPoc {\r\n        name\r\n        phoneNumber\r\n      }\r\n      houseBL\r\n      clearingAgents {\r\n        name\r\n        phoneNumber\r\n      }\r\n      emptyReturn\r\n      doDate\r\n      charges\r\n      bank\r\n      arrivedDate\r\n      account\r\n      clientPoc {\r\n        name\r\n        phoneNumber\r\n      }\r\n      securityDeposit\r\n      gatePassAttachment\r\n      doAttachment\r\n      detention\r\n      title\r\n      doBroker\r\n      containerOtherCharges\r\n      readyToMove\r\n      rtmTS\r\n    }\r\n    DoStatus {\r\n      _id\r\n      status\r\n      OrderId\r\n      TerminalOpsId\r\n      comment\r\n      documents {\r\n        payOrder\r\n        underTakings\r\n        blStamped\r\n        loloReceipt\r\n        goodsDeclaration\r\n      }\r\n      statusNumber\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    eir {\r\n      amanat\r\n      damaged\r\n      eirDocument\r\n      emailClient\r\n      infoComplete\r\n      localMovement\r\n      lolo\r\n      loloDocument\r\n      nwt\r\n      placement\r\n      placementDoc\r\n      receivedAt\r\n      receivedBy\r\n      repairing\r\n      turning\r\n    }\r\n    finalizedRate\r\n    InvoiceId\r\n    Lane {\r\n      _id\r\n      fromRegion {\r\n        _id\r\n        name\r\n        Locations {\r\n          formattedAddress\r\n          _id\r\n          createdAt\r\n          Region {\r\n            _id\r\n            name\r\n            createdAt\r\n            updatedAt\r\n          }\r\n        }\r\n        createdAt\r\n        updatedAt\r\n      }\r\n      toRegion {\r\n        name\r\n        _id\r\n        createdAt\r\n        updatedAt\r\n        Locations {\r\n          formattedAddress\r\n          Region {\r\n            _id\r\n            name\r\n            createdAt\r\n            updatedAt\r\n          }\r\n          createdAt\r\n          updatedAt\r\n        }\r\n      }\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    loadingDT\r\n    orderNumber\r\n    OrderStatus {\r\n      _id\r\n      OrderId\r\n      internalStatus\r\n      status\r\n      createdAt\r\n    }\r\n    OrderStatusHistory {\r\n      _id\r\n      OrderId\r\n      internalStatus\r\n      status\r\n      createdAt\r\n    }\r\n    subOrderNumber\r\n    Supplier {\r\n      _id\r\n      isBlocked\r\n      isSuspended\r\n      type\r\n      versionCode\r\n      versionName\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    type\r\n    Tracker {\r\n      _id\r\n      name\r\n      isConnected\r\n      simNumber\r\n      unitNumber\r\n      provider\r\n    }\r\n    linkedLongHaulOrder\r\n    vesselCutoffDT\r\n    specialRequest {\r\n      doIssuance\r\n      localMovement\r\n      numberFlatbeds\r\n      orderCategory\r\n      otherRequests\r\n      fastLane\r\n      reefer\r\n    }\r\n    OrderLocations {\r\n      _id\r\n      Location {\r\n        _id\r\n        formattedAddress\r\n        additionalDetails\r\n        Region {\r\n          _id\r\n          name\r\n          createdAt\r\n          updatedAt\r\n        }\r\n        createdAt\r\n        updatedAt\r\n      }\r\n      locationType\r\n      contacts {\r\n        name\r\n        phoneNumber\r\n      }\r\n      OrderId\r\n    }\r\n    Quotations {\r\n      _id\r\n      OrderId\r\n      BrokerId\r\n      SupplierId\r\n      cost\r\n      driver {\r\n        name\r\n        phoneNumber\r\n        vehicleRegistrationNumber\r\n        currentCoordinates {\r\n          lat\r\n          lng\r\n        }\r\n      }\r\n      approved\r\n      slipped\r\n      bidWon\r\n    }\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
 						"variables": ""
-					},
-					"options": {
-						"graphql": {}
 					}
 				},
 				"url": "https://backend.dev.bridgelinxpk.com/graphql"
@@ -193,7 +175,7 @@
 		},
 		{
 			"name": "getAllLanes",
-			"_postman_id": "81a05072-9429-4e5c-91ff-c4571839afb3",
+			"id": "81a05072-9429-4e5c-91ff-c4571839afb3",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -205,9 +187,6 @@
 					"graphql": {
 						"query": "query GetAllLanes {\r\n  getAllLanes {\r\n    _id\r\n    toRegion {\r\n      _id\r\n      name\r\n      Locations {\r\n        _id\r\n        formattedAddress\r\n        additionalDetails\r\n        coordinates {\r\n          lat\r\n          lng\r\n        }\r\n        Region {\r\n          _id\r\n          name\r\n          createdAt\r\n          updatedAt\r\n        }\r\n        createdAt\r\n        updatedAt\r\n      }\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    fromRegion {\r\n      _id\r\n      name\r\n      Locations {\r\n        _id\r\n        formattedAddress\r\n        additionalDetails\r\n        coordinates {\r\n          lat\r\n          lng\r\n        }\r\n        Region {\r\n          _id\r\n          name\r\n          updatedAt\r\n          createdAt\r\n        }\r\n        createdAt\r\n        updatedAt\r\n      }\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
 						"variables": ""
-					},
-					"options": {
-						"graphql": {}
 					}
 				},
 				"url": "https://backend.dev.bridgelinxpk.com/graphql"
@@ -216,7 +195,7 @@
 		},
 		{
 			"name": "getAllLongHaul",
-			"_postman_id": "4e046931-79c1-49b8-aca1-6bb256e90d6b",
+			"id": "4e046931-79c1-49b8-aca1-6bb256e90d6b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -228,9 +207,6 @@
 					"graphql": {
 						"query": "query GetAllLongHaul {\r\n  getAllLongHaul {\r\n    _id\r\n    businessCode\r\n    Broker {\r\n      _id\r\n      containerDimensions\r\n      isBlocked\r\n      type\r\n      versionCode\r\n      isSuspended\r\n      truckAdda\r\n      versionName\r\n      linkedSuppliers {\r\n        _id\r\n        isSuspended\r\n        isBlocked\r\n        type\r\n        createdAt\r\n        versionCode\r\n        versionName\r\n      }\r\n      PotentialDrivers {\r\n        _id\r\n        driver {\r\n          name\r\n          phoneNumber\r\n          currentCoordinates {\r\n            lat\r\n            lng\r\n          }\r\n          vehicleRegistrationNumber\r\n        }\r\n        status\r\n        partiallyAssignedBusinessCode\r\n        partiallyAssignedOrderId\r\n        createdAt\r\n      }\r\n      notifToken\r\n      User {\r\n        _id\r\n        firstName\r\n        lastName\r\n        phoneNumber\r\n      }\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    clearingAgents {\r\n      name\r\n      phoneNumber\r\n    }\r\n    clientEmails\r\n    Client {\r\n      _id\r\n      Corporate {\r\n        _id\r\n        businessCode\r\n        businessName\r\n        freightType\r\n        creationEmail\r\n        updateEmail\r\n        corporateId\r\n      }\r\n      position\r\n      department\r\n      versionCode\r\n      versionName\r\n      User {\r\n        _id\r\n        firstName\r\n        lastName\r\n        phoneNumber\r\n      }\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    Corporate {\r\n      _id\r\n      businessCode\r\n      businessName\r\n      freightType\r\n      creationEmail\r\n      updateEmail\r\n      corporateId\r\n    }\r\n    cost\r\n    createdBy\r\n    driver {\r\n      name\r\n      phoneNumber\r\n      vehicleRegistrationNumber\r\n      currentCoordinates {\r\n        lat\r\n        lng\r\n      }\r\n    }\r\n    driverAddedBy {\r\n      addedAt\r\n      addedBy {\r\n        _id\r\n        firstName\r\n        lastName\r\n        source\r\n      }\r\n    }\r\n    driverAssignedBy {\r\n      assignedAt\r\n      firstName\r\n      lastName\r\n      source\r\n      profileID\r\n    }\r\n    driverInfoHistory {\r\n      name\r\n      phoneNumber\r\n      vehicleRegistrationNumber\r\n      driverMatchedBy {\r\n        assignedAt\r\n        firstName\r\n        lastName\r\n        source\r\n        profileID\r\n      }\r\n      markSlippedBy {\r\n        firstName\r\n        lastName\r\n        source\r\n        profileID\r\n        markSlippedAt\r\n      }\r\n    }\r\n    DriverStatusHistories {\r\n      _id\r\n      OrderId\r\n      DriverStatusJourneys {\r\n        type\r\n        _id\r\n        UserId\r\n        formattedAddress\r\n        status\r\n        comment\r\n        createdAt\r\n      }\r\n      createdBy {\r\n        firstName\r\n        _id\r\n        lastName\r\n        phoneNumber\r\n        UserType {\r\n          _id\r\n          userType\r\n        }\r\n      }\r\n      status\r\n      updatedAt\r\n      createdAt\r\n    }\r\n    finalizedRate\r\n    Lane {\r\n      _id\r\n      fromRegion {\r\n        _id\r\n        name\r\n        Locations {\r\n          formattedAddress\r\n          _id\r\n          Region {\r\n            _id\r\n            name\r\n          }\r\n        }\r\n        createdAt\r\n        updatedAt\r\n      }\r\n      toRegion {\r\n        _id\r\n        name\r\n        Locations {\r\n          formattedAddress\r\n          _id\r\n          Region {\r\n            _id\r\n            name\r\n          }\r\n        }\r\n        createdAt\r\n        updatedAt\r\n      }\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    orderNumber\r\n    OrderStatus {\r\n      _id\r\n      internalStatus\r\n      status\r\n      createdAt\r\n    }\r\n    OrderStatusHistory {\r\n      _id\r\n      OrderId\r\n      internalStatus\r\n      status\r\n      createdAt\r\n    }\r\n    subOrderNumber\r\n    Supplier {\r\n      _id\r\n    }\r\n    Tracker {\r\n      _id\r\n      name\r\n      isConnected\r\n      orderType\r\n      OrderId\r\n      provider\r\n      simNumber\r\n      unitNumber\r\n    }\r\n    loadingDT\r\n    isLotOrder\r\n    shipmentInfo {\r\n      freightCount\r\n      freightType\r\n      freightWeight\r\n      estimatedWeight\r\n      estimatedCount\r\n    }\r\n    vehicleType\r\n    vehicleSubType\r\n    LinkedImportExportOrders {\r\n      _id\r\n      bilty {\r\n        biltyDate\r\n        biltyDocument\r\n        biltyNumber\r\n        isInformationComplete\r\n        kantaDocument\r\n        lcNumber\r\n        seal\r\n        loloDocument\r\n      }\r\n      Broker {\r\n        _id\r\n      }\r\n      businessCode\r\n      clearingAgents {\r\n        name\r\n        phoneNumber\r\n      }\r\n      clientEmails\r\n      Corporate {\r\n        businessCode\r\n        businessName\r\n        _id\r\n      }\r\n      cost\r\n      createdBy\r\n      driver {\r\n        name\r\n        phoneNumber\r\n        vehicleRegistrationNumber\r\n      }\r\n      driverAddedBy {\r\n        addedAt\r\n        addedBy {\r\n          _id\r\n        }\r\n      }\r\n      driverAssignedBy {\r\n        assignedAt\r\n        firstName\r\n        lastName\r\n        source\r\n        profileID\r\n      }\r\n      finalizedRate\r\n      loadingDT\r\n      orderNumber\r\n      type\r\n      vesselCutoffDT\r\n      specialRequest {\r\n        reefer\r\n        otherRequests\r\n        fastLane\r\n        numberFlatbeds\r\n        orderCategory\r\n        doIssuance\r\n        localMovement\r\n      }\r\n      Quotations {\r\n        OrderId\r\n        _id\r\n        BrokerId\r\n        SupplierId\r\n        cost\r\n        driver {\r\n          name\r\n          phoneNumber\r\n          vehicleRegistrationNumber\r\n        }\r\n        approved\r\n        bidWon\r\n        slipped\r\n      }\r\n      createdAt\r\n    }\r\n    specialRequest {\r\n      lotOrder\r\n      numberVehicles\r\n      orderCategory\r\n      otherRequests\r\n    }\r\n    Locations {\r\n      _id\r\n      formattedAddress\r\n      additionalDetails\r\n      Region {\r\n        _id\r\n        createdAt\r\n        name\r\n      }\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    Quotations {\r\n      _id\r\n      OrderId\r\n      BrokerId\r\n      SupplierId\r\n      cost\r\n      driver {\r\n        name\r\n        phoneNumber\r\n        vehicleRegistrationNumber\r\n        currentCoordinates {\r\n          lat\r\n          lng\r\n        }\r\n      }\r\n      approved\r\n      slipped\r\n      bidWon\r\n    }\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
 						"variables": ""
-					},
-					"options": {
-						"graphql": {}
 					}
 				},
 				"url": "https://backend.dev.bridgelinxpk.com/graphql"
@@ -239,7 +215,7 @@
 		},
 		{
 			"name": "getAllSuppliers",
-			"_postman_id": "66bca455-684e-4c80-90a9-2af3ac3d7bb7",
+			"id": "66bca455-684e-4c80-90a9-2af3ac3d7bb7",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -251,9 +227,6 @@
 					"graphql": {
 						"query": "query GetAllSuppliers {\r\n  getAllSuppliers {\r\n    _id\r\n    isBlocked\r\n    code\r\n    isSuspended\r\n    PotentialDrivers {\r\n      _id\r\n      BrokerId\r\n      SupplierId\r\n      status\r\n      createdAt\r\n      cost\r\n    }\r\n    linkedBrokers {\r\n      _id\r\n      isBlocked\r\n      type\r\n      versionCode\r\n      versionName\r\n      isSuspended\r\n      createdAt\r\n    }\r\n    ImportExportOrders {\r\n      _id\r\n    }\r\n    LongHaulOrders {\r\n      _id\r\n    }\r\n    Regions {\r\n      _id\r\n      name\r\n      Locations {\r\n        _id\r\n        formattedAddress\r\n        additionalDetails\r\n        Region {\r\n          _id\r\n          name\r\n          createdAt\r\n          updatedAt\r\n        }\r\n        createdAt\r\n        updatedAt\r\n      }\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    User {\r\n      _id\r\n      firstName\r\n      lastName\r\n      phoneNumber\r\n      email\r\n      createdAt\r\n    }\r\n    type\r\n    versionCode\r\n    versionName\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
 						"variables": ""
-					},
-					"options": {
-						"graphql": {}
 					}
 				},
 				"url": "https://backend.dev.bridgelinxpk.com/graphql"
@@ -262,7 +235,7 @@
 		},
 		{
 			"name": "getAllTrackers",
-			"_postman_id": "211df36c-07d3-4a5c-a012-d599cc93e9d9",
+			"id": "211df36c-07d3-4a5c-a012-d599cc93e9d9",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -274,9 +247,6 @@
 					"graphql": {
 						"query": "query GetAllTrackers {\r\n  getAllTrackers {\r\n    _id\r\n    name\r\n    isConnected\r\n    orderType\r\n    provider\r\n    OrderId\r\n    simNumber\r\n    unitNumber\r\n  }\r\n}",
 						"variables": ""
-					},
-					"options": {
-						"graphql": {}
 					}
 				},
 				"url": "https://backend.dev.bridgelinxpk.com/graphql"
@@ -285,7 +255,7 @@
 		},
 		{
 			"name": "getAllVehicles",
-			"_postman_id": "613cbab9-e79d-482d-aa39-834aa40d62a7",
+			"id": "613cbab9-e79d-482d-aa39-834aa40d62a7",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -297,9 +267,6 @@
 					"graphql": {
 						"query": "query GetAllVehicles {\r\n  getAllVehicles {\r\n    _id\r\n    registrationNumber\r\n    isFiction\r\n    horsePower\r\n    manufacturerName\r\n    payloadWeight\r\n    hasSpareTools\r\n    startingOdometerReading\r\n    vehicleLength\r\n    vehicleType\r\n    vehicleSubType\r\n    vehicleVariant\r\n    makeYear\r\n    FreightManagerId\r\n    OwnerId\r\n    onboardingDate\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
 						"variables": ""
-					},
-					"options": {
-						"graphql": {}
 					}
 				},
 				"url": "https://backend.dev.bridgelinxpk.com/graphql"
@@ -308,7 +275,7 @@
 		},
 		{
 			"name": "getAllRegions",
-			"_postman_id": "a1c2f6fe-299c-49bc-871f-bc2db0fcd1bb",
+			"id": "a1c2f6fe-299c-49bc-871f-bc2db0fcd1bb",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -320,9 +287,6 @@
 					"graphql": {
 						"query": "query GetAllRegions {\r\n  getAllRegions {\r\n    _id\r\n    name\r\n    Locations {\r\n      _id\r\n      formattedAddress\r\n      additionalDetails\r\n      coordinates {\r\n        lat\r\n        lng\r\n      }\r\n      Region {\r\n        _id\r\n        name\r\n        createdAt\r\n        updatedAt\r\n      }\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
 						"variables": ""
-					},
-					"options": {
-						"graphql": {}
 					}
 				},
 				"url": "{{url}}"
@@ -331,7 +295,7 @@
 		},
 		{
 			"name": "getAllUserTypes",
-			"_postman_id": "cad03330-f6cf-40e8-96b3-f7da83f5f42b",
+			"id": "cad03330-f6cf-40e8-96b3-f7da83f5f42b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -343,9 +307,6 @@
 					"graphql": {
 						"query": "query GetAllUserTypes {\r\n  getAllUserTypes {\r\n    _id\r\n    userType\r\n  }\r\n}",
 						"variables": ""
-					},
-					"options": {
-						"graphql": {}
 					}
 				},
 				"url": "{{url}}"
@@ -354,7 +315,7 @@
 		},
 		{
 			"name": "getAllCorporates",
-			"_postman_id": "7ae05b49-d6b9-46b0-928a-08ac33f04187",
+			"id": "7ae05b49-d6b9-46b0-928a-08ac33f04187",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -366,9 +327,6 @@
 					"graphql": {
 						"query": "query GetAllCorporates {\r\n  getAllCorporates {\r\n    _id\r\n    businessCode\r\n    businessName\r\n    sector\r\n    clearingAgents {\r\n      name\r\n      phoneNumber\r\n    }\r\n    freightType\r\n    invoiceCount\r\n    invoicingDetails {\r\n      NTN\r\n      STRN\r\n      billingAddress\r\n      contactNumber\r\n      invoicingTerms\r\n      contactPerson\r\n      name\r\n      nomenclature {\r\n        branchCode\r\n        clientCode\r\n      }\r\n      paymentTerms\r\n    }\r\n    Invoices {\r\n      _id\r\n    }\r\n    creationEmail\r\n    updateEmail\r\n    corporateId\r\n    Locations {\r\n      _id\r\n      formattedAddress\r\n      additionalDetails\r\n    \r\n      Region {\r\n        _id\r\n        name\r\n        createdAt\r\n        updatedAt\r\n      }\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
 						"variables": ""
-					},
-					"options": {
-						"graphql": {}
 					}
 				},
 				"url": "{{url}}"
@@ -377,7 +335,7 @@
 		},
 		{
 			"name": "getAllOrderStatuses",
-			"_postman_id": "7f6f6682-0365-423d-82be-2a2bd90767f9",
+			"id": "7f6f6682-0365-423d-82be-2a2bd90767f9",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -389,9 +347,6 @@
 					"graphql": {
 						"query": "query GetAllOrderStatuses {\r\n  getAllOrderStatuses {\r\n    _id\r\n    OrderId\r\n    internalStatus\r\n    status\r\n    createdAt\r\n  }\r\n}",
 						"variables": ""
-					},
-					"options": {
-						"graphql": {}
 					}
 				},
 				"url": "https://backend.dev.bridgelinxpk.com/graphql"
@@ -400,7 +355,7 @@
 		},
 		{
 			"name": "getAllDoStatuses",
-			"_postman_id": "ef01dca1-2663-4d76-b075-1f3c92607abd",
+			"id": "ef01dca1-2663-4d76-b075-1f3c92607abd",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -412,9 +367,6 @@
 					"graphql": {
 						"query": "query GetAllDoStatuses {\r\n  getAllDoStatuses {\r\n    _id\r\n    status\r\n    OrderId\r\n    TerminalOpsId\r\n    comment\r\n    documents {\r\n      payOrder\r\n      underTakings\r\n      blStamped\r\n      loloReceipt\r\n      goodsDeclaration\r\n    }\r\n    statusNumber\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
 						"variables": ""
-					},
-					"options": {
-						"graphql": {}
 					}
 				},
 				"url": "https://backend.dev.bridgelinxpk.com/graphql"
@@ -423,7 +375,7 @@
 		},
 		{
 			"name": "getAllQuotations",
-			"_postman_id": "c2eedcab-7fa5-4a40-b12d-9a74e9e38b37",
+			"id": "c2eedcab-7fa5-4a40-b12d-9a74e9e38b37",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -435,9 +387,6 @@
 					"graphql": {
 						"query": "query GetAllQuotations {\r\n  getAllQuotations {\r\n    _id\r\n    OrderId\r\n    BrokerId\r\n    SupplierId\r\n    cost\r\n    driver {\r\n      name\r\n      phoneNumber\r\n      vehicleRegistrationNumber\r\n      currentCoordinates {\r\n        lat\r\n        lng\r\n      }\r\n    }\r\n    approved\r\n    slipped\r\n    bidWon\r\n  }\r\n}",
 						"variables": ""
-					},
-					"options": {
-						"graphql": {}
 					}
 				},
 				"url": "https://backend.dev.bridgelinxpk.com/graphql"
@@ -446,7 +395,7 @@
 		},
 		{
 			"name": "getAllLocations",
-			"_postman_id": "61225db6-0c4a-4225-b5d4-915d8dd8e7f3",
+			"id": "61225db6-0c4a-4225-b5d4-915d8dd8e7f3",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -458,9 +407,6 @@
 					"graphql": {
 						"query": "query GetAllLocations {\r\n  getAllLocations {\r\n    _id\r\n    formattedAddress\r\n    additionalDetails\r\n    coordinates {\r\n      lat\r\n      lng\r\n    }\r\n    Region {\r\n      _id\r\n      name\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
 						"variables": ""
-					},
-					"options": {
-						"graphql": {}
 					}
 				},
 				"url": "https://backend.dev.bridgelinxpk.com/graphql"
@@ -469,7 +415,7 @@
 		},
 		{
 			"name": "getAllPendingBls",
-			"_postman_id": "9e53df3d-319f-4f68-9233-d35cc61be60e",
+			"id": "9e53df3d-319f-4f68-9233-d35cc61be60e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -481,9 +427,6 @@
 					"graphql": {
 						"query": "query GetAllPendingBls {\r\n  getAllPendingBls {\r\n    _id\r\n    document\r\n    documentNumber\r\n    TerminalOpsId\r\n    doStatus {\r\n      timestamp\r\n      documents {\r\n        goodsDeclaration\r\n        loloReceipt\r\n        blStamped\r\n        underTakings\r\n        payOrder\r\n      }\r\n      statusNumber\r\n      comment\r\n      TerminalOpsId\r\n      status\r\n    }\r\n    doOfficeInfo {\r\n      account\r\n      arrivedDate\r\n      bank\r\n      charges\r\n      doDate\r\n      emptyReturn\r\n      clearingAgents {\r\n        name\r\n        phoneNumber\r\n      }\r\n      houseBL\r\n      clearingPoc {\r\n        name\r\n        phoneNumber\r\n      }\r\n      client\r\n      clientPoc {\r\n        name\r\n        phoneNumber\r\n      }\r\n      securityDeposit\r\n      gatePassAttachment\r\n      doAttachment\r\n      detention\r\n      title\r\n      doBroker\r\n      containerOtherCharges\r\n      readyToMove\r\n      rtmTS\r\n    }\r\n    shippingLine\r\n    status\r\n    pendingNo\r\n    returnDT\r\n    gatePassDocument\r\n    containerNumber\r\n    createdBy\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
 						"variables": ""
-					},
-					"options": {
-						"graphql": {}
 					}
 				},
 				"url": "https://backend.dev.bridgelinxpk.com/graphql"
@@ -492,7 +435,7 @@
 		},
 		{
 			"name": "getAllTerminalOps",
-			"_postman_id": "32496edc-1da5-4a3c-b73c-a692b6633022",
+			"id": "32496edc-1da5-4a3c-b73c-a692b6633022",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -504,9 +447,6 @@
 					"graphql": {
 						"query": "query GetAllTerminalOps {\r\n  getAllTerminalOps {\r\n    _id\r\n    User {\r\n      _id\r\n      firstName\r\n      lastName\r\n      phoneNumber\r\n      email\r\n      profileImage\r\n      \r\n      cnic\r\n      UserType {\r\n        _id\r\n        userType\r\n      }\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    PendingBls {\r\n      TerminalOpsId\r\n      documentNumber\r\n      document\r\n      _id\r\n      doStatus {\r\n        status\r\n        TerminalOpsId\r\n        comment\r\n        documents {\r\n          goodsDeclaration\r\n          blStamped\r\n          loloReceipt\r\n          underTakings\r\n          payOrder\r\n        }\r\n        statusNumber\r\n        timestamp\r\n      }\r\n      doOfficeInfo {\r\n        clearingAgents {\r\n          name\r\n          phoneNumber\r\n        }\r\n        account\r\n        arrivedDate\r\n        bank\r\n        charges\r\n        doDate\r\n        emptyReturn\r\n        houseBL\r\n        clearingPoc {\r\n          name\r\n          phoneNumber\r\n        }\r\n        client\r\n        clientPoc {\r\n          name\r\n          phoneNumber\r\n        }\r\n        securityDeposit\r\n        gatePassAttachment\r\n        doAttachment\r\n        detention\r\n        title\r\n        doBroker\r\n        containerOtherCharges\r\n        readyToMove\r\n        rtmTS\r\n      }\r\n      shippingLine\r\n      status\r\n      pendingNo\r\n      returnDT\r\n      gatePassDocument\r\n      containerNumber\r\n      createdBy\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    DoStatuses {\r\n      _id\r\n      status\r\n      TerminalOpsId\r\n      OrderId\r\n      comment\r\n      documents {\r\n        goodsDeclaration\r\n        loloReceipt\r\n        underTakings\r\n        blStamped\r\n        payOrder\r\n      }\r\n      statusNumber\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    isBlocked\r\n    platform\r\n    versionCode\r\n    versionName\r\n    notifToken\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
 						"variables": ""
-					},
-					"options": {
-						"graphql": {}
 					}
 				},
 				"url": "https://backend.dev.bridgelinxpk.com/graphql"
@@ -515,7 +455,7 @@
 		},
 		{
 			"name": "getAllPotentialDrivers",
-			"_postman_id": "2ac96b50-407d-4065-a135-4b6c6273977c",
+			"id": "2ac96b50-407d-4065-a135-4b6c6273977c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -527,9 +467,6 @@
 					"graphql": {
 						"query": "query GetAllPotentialDrivers {\r\n  getAllPotentialDrivers {\r\n    _id\r\n    driverAddedBy {\r\n      addedAt\r\n      addedBy {\r\n        _id\r\n        firstName\r\n        lastName\r\n        source\r\n      }\r\n    }\r\n    assignedBy {\r\n      phoneNumber\r\n      firstName\r\n      lastName\r\n      _id\r\n      email\r\n      profileImage\r\n      \r\n      cnic\r\n      UserType {\r\n        _id\r\n        userType\r\n      }\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    BrokerId\r\n    SupplierId\r\n    assignedTo\r\n    DriverStatusHistories {\r\n      _id\r\n      OrderId\r\n      DriverStatusJourneys {\r\n        _id\r\n        type\r\n        UserId\r\n        coordinates {\r\n          lng\r\n          lat\r\n        }\r\n        formattedAddress\r\n        status\r\n        comment\r\n        createdAt\r\n        updatedAt\r\n      }\r\n      createdBy {\r\n        email\r\n        _id\r\n        firstName\r\n        lastName\r\n        phoneNumber\r\n        profileImage\r\n        \r\n        cnic\r\n        UserType {\r\n          _id\r\n          userType\r\n        }\r\n        createdAt\r\n        updatedAt\r\n      }\r\n      status\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    cost\r\n    driver {\r\n      name\r\n      phoneNumber\r\n      vehicleRegistrationNumber\r\n     \r\n    }\r\n    dropOff\r\n    partiallyAssignedBusinessCode\r\n    partiallyAssignedOrderId\r\n    port\r\n    status\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
 						"variables": ""
-					},
-					"options": {
-						"graphql": {}
 					}
 				},
 				"url": "https://backend.dev.bridgelinxpk.com/graphql"
@@ -538,7 +475,7 @@
 		},
 		{
 			"name": "getAllInvoices",
-			"_postman_id": "7677636d-5b56-452a-b116-8882780ed375",
+			"id": "7677636d-5b56-452a-b116-8882780ed375",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -550,9 +487,6 @@
 					"graphql": {
 						"query": "query GetAllInvoices {\r\n  getAllInvoices {\r\n    _id\r\n    businessCode\r\n    createdBy {\r\n      firstName\r\n      _id\r\n      lastName\r\n      phoneNumber\r\n      email\r\n      profileImage\r\n      \r\n      cnic\r\n      UserType {\r\n        _id\r\n        userType\r\n      }\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    commercialInvoice {\r\n      columns {\r\n        dataKey\r\n        header\r\n      }\r\n      data {\r\n        biltyNumber\r\n        blcroNumber\r\n        clearingAgents\r\n        commodity\r\n        containerNo\r\n        description\r\n        detentions\r\n        dropoffCharges\r\n        dropoffPoint\r\n        emptyContainerPickup\r\n        extraWeightCharges\r\n        freightWeight\r\n        fuelAmount\r\n        fuelQuantity\r\n        fuelRate\r\n        inaam\r\n        kantaCharges\r\n        key\r\n        lcNumber\r\n        loadingDT\r\n        loadingPoint\r\n        loloCharges\r\n        miscCharges\r\n        orderNumber\r\n        rate\r\n        salesTaxAmount\r\n        shippingLine\r\n        total\r\n        totalExpense\r\n        vehicleNo\r\n        vehicleSize\r\n      }\r\n      summary {\r\n        key {\r\n          content\r\n        }\r\n        salesTaxAmount {\r\n          content\r\n        }\r\n        total {\r\n          content\r\n        }\r\n        totalExpense {\r\n          content\r\n        }\r\n      }\r\n    }\r\n    fuelCardInvoice {\r\n      columns {\r\n        dataKey\r\n        header\r\n      }\r\n      data {\r\n        biltyNumber\r\n        blcroNumber\r\n        clearingAgents\r\n        commodity\r\n        containerNo\r\n        description\r\n        detentions\r\n        dropoffCharges\r\n        dropoffPoint\r\n        emptyContainerPickup\r\n        extraWeightCharges\r\n        freightWeight\r\n        fuelAmount\r\n        fuelQuantity\r\n        fuelRate\r\n        inaam\r\n        kantaCharges\r\n        key\r\n        loadingDT\r\n        lcNumber\r\n        loadingPoint\r\n        loloCharges\r\n        miscCharges\r\n        orderNumber\r\n        rate\r\n        total\r\n        shippingLine\r\n        salesTaxAmount\r\n        totalExpense\r\n        vehicleSize\r\n        vehicleNo\r\n      }\r\n      summary {\r\n        key {\r\n          content\r\n        }\r\n        salesTaxAmount {\r\n          content\r\n        }\r\n        total {\r\n          content\r\n        }\r\n        totalExpense {\r\n          content\r\n        }\r\n      }\r\n    }\r\n    salesTaxInvoice {\r\n      columns {\r\n        header\r\n        dataKey\r\n      }\r\n      data {\r\n        vehicleSize\r\n        vehicleNo\r\n        totalExpense\r\n        total\r\n        shippingLine\r\n        salesTaxAmount\r\n        rate\r\n        orderNumber\r\n        miscCharges\r\n        loloCharges\r\n        loadingPoint\r\n        loadingDT\r\n        key\r\n        lcNumber\r\n        kantaCharges\r\n        inaam\r\n        fuelRate\r\n        fuelQuantity\r\n        fuelAmount\r\n        freightWeight\r\n        extraWeightCharges\r\n        emptyContainerPickup\r\n        dropoffPoint\r\n        dropoffCharges\r\n        detentions\r\n        description\r\n        containerNo\r\n        commodity\r\n        clearingAgents\r\n        blcroNumber\r\n        biltyNumber\r\n      }\r\n      summary {\r\n        totalExpense {\r\n          content\r\n        }\r\n        total {\r\n          content\r\n        }\r\n        salesTaxAmount {\r\n          content\r\n        }\r\n        key {\r\n          content\r\n        }\r\n      }\r\n    }\r\n    headers {\r\n      NTN\r\n      STRN\r\n      billingAddress\r\n      contactNumber\r\n      name\r\n    }\r\n    invoiceDate\r\n    invoiceNumber\r\n    orders\r\n    receivableDetails {\r\n      adjustments {\r\n        itAmount\r\n        itPercentage\r\n        reconciliation\r\n        itTotalAmount\r\n        reconciliationRemarks\r\n        stAmount\r\n        stPercentage\r\n        stTotalAmount\r\n      }\r\n      amounts {\r\n        instrument\r\n        received\r\n        totalReceivable\r\n        totalReceived\r\n        totalRemaining\r\n      }\r\n      instrument {\r\n        accountNumber\r\n        accountTitle\r\n        instrumentNumber\r\n        receivedDate\r\n        instrumentDate\r\n        depositDate\r\n        document\r\n        bankName\r\n        clearanceDate\r\n      }\r\n      paymentMode\r\n    }\r\n    segment\r\n    status\r\n    totalReceivableAmount\r\n    variables {\r\n      inclusiveExclusive\r\n      gstType\r\n      gstPercentage\r\n      fuelQuantityType\r\n      fuelQuantity\r\n    }\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
 						"variables": ""
-					},
-					"options": {
-						"graphql": {}
 					}
 				},
 				"url": "https://backend.dev.bridgelinxpk.com/graphql"
@@ -561,7 +495,7 @@
 		},
 		{
 			"name": "getAllPendingImports",
-			"_postman_id": "19464098-38a7-4bec-bdd2-3d8e574d5dd1",
+			"id": "19464098-38a7-4bec-bdd2-3d8e574d5dd1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -573,12 +507,21 @@
 					"graphql": {
 						"query": "query GetAllPendingImports {\r\n  getAllPendingImports {\r\n      _id\r\n    businessCode\r\n    clearingAgents {\r\n      name\r\n      phoneNumber\r\n    }\r\n    clientEmails\r\n    Client {\r\n      Corporate {\r\n        _id\r\n        businessCode\r\n        businessName\r\n        sector\r\n        updateEmail\r\n        creationEmail\r\n        corporateId\r\n      }\r\n      _id\r\n      position\r\n      department\r\n      versionCode\r\n      versionName\r\n      User {\r\n        _id\r\n        firstName\r\n        lastName\r\n        phoneNumber\r\n      }\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    flatbedInfo {\r\n      finalizedRate\r\n      freightType\r\n      freightWeight\r\n    }\r\n    OrderStatus {\r\n      _id\r\n      OrderId\r\n      internalStatus\r\n      status\r\n      createdAt\r\n    }\r\n    ContainerInfos {\r\n      _id\r\n      document\r\n      documentNumber\r\n      dimension\r\n      containerNumber\r\n      terminal {\r\n        formattedAddress\r\n        returnDT\r\n        contacts {\r\n          name\r\n          phoneNumber\r\n        }\r\n      }\r\n      freightType\r\n      freightWeight\r\n      OrderId\r\n      shippingLine\r\n    }\r\n    OrderLocations {\r\n      _id\r\n      Location {\r\n        formattedAddress\r\n        _id\r\n        additionalDetails\r\n        coordinates {\r\n          lat\r\n          lng\r\n        }\r\n        Region {\r\n          _id\r\n          name\r\n          createdAt\r\n          updatedAt\r\n        }\r\n        createdAt\r\n        updatedAt\r\n      }\r\n      locationType\r\n      contacts {\r\n        phoneNumber\r\n        name\r\n      }\r\n      OrderId\r\n    }\r\n    DoStatus {\r\n      _id\r\n      status\r\n      OrderId\r\n      TerminalOpsId\r\n      comment\r\n      documents {\r\n        goodsDeclaration\r\n        loloReceipt\r\n        blStamped\r\n        underTakings\r\n        payOrder\r\n      }\r\n      statusNumber\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    Lane {\r\n      _id\r\n      fromRegion {\r\n        _id\r\n        name\r\n        Locations {\r\n          coordinates {\r\n            lat\r\n            lng\r\n          }\r\n          additionalDetails\r\n          formattedAddress\r\n          _id\r\n          Region {\r\n            _id\r\n            name\r\n            createdAt\r\n            updatedAt\r\n          }\r\n          createdAt\r\n          updatedAt\r\n        }\r\n        updatedAt\r\n        createdAt\r\n      }\r\n      toRegion {\r\n        _id\r\n        name\r\n        Locations {\r\n          _id\r\n          formattedAddress\r\n          additionalDetails\r\n          coordinates {\r\n            lat\r\n            lng\r\n          }\r\n          Region {\r\n            updatedAt\r\n            createdAt\r\n            name\r\n            _id\r\n          }\r\n          createdAt\r\n          updatedAt\r\n        }\r\n        createdAt\r\n        updatedAt\r\n      }\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    Corporate {\r\n      _id\r\n      businessName\r\n      businessCode\r\n    }\r\n    createdBy\r\n    loadingDT\r\n    orderNumber\r\n    RedoJobId\r\n    specialRequest {\r\n      doIssuance\r\n      localMovement\r\n      numberFlatbeds\r\n      orderCategory\r\n      otherRequests\r\n      fastLane\r\n      reefer\r\n    }\r\n    subOrderNumber\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
 						"variables": ""
-					},
-					"options": {
-						"graphql": {}
 					}
 				},
 				"url": "https://backend.dev.bridgelinxpk.com/graphql"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "fba3093a-5ca8-47a5-b571-2b805d30a9a7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
 			},
 			"response": []
 		}
