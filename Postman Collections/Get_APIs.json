@@ -534,14 +534,22 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "getAllBeneficiaries",
 			"id": "a10a26e8-a855-4c47-85fb-49fd1a3e1a0d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query Query {\r\n  getAllBeneficiaries {\r\n    _id\r\n    accountNumber\r\n    accountTitle\r\n    accountType\r\n    bankCode\r\n    bankName\r\n    contactPhone\r\n    name\r\n    type\r\n    Payments {\r\n      _id\r\n      PaidBy {\r\n        _id\r\n        firstName\r\n        lastName\r\n        phoneNumber\r\n        email\r\n        profileImage\r\n        cnic\r\n        createdAt\r\n        updatedAt\r\n      }\r\n      amount\r\n      purpose\r\n      EditHistory {\r\n        foreign_id\r\n        tableName\r\n        userName\r\n        action\r\n        oldValues\r\n        newValues\r\n        updatedColumns\r\n        createdAt\r\n      }\r\n    }\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": "{{url}}"
 			},
 			"response": []
 		}
