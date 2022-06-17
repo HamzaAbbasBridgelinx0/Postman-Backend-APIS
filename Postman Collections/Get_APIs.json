@@ -600,8 +600,16 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query Query {\r\n  getAllLanesRates {\r\n    _id\r\n    Rate\r\n    WeightRange\r\n    Lane {\r\n      _id\r\n      from {\r\n        updatedAt\r\n        name\r\n        createdAt\r\n        _id\r\n      }\r\n      to {\r\n        name\r\n        createdAt\r\n        updatedAt\r\n        _id\r\n      }\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": "{{url}}"
 			},
 			"response": []
 		}
