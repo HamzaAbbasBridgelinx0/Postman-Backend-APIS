@@ -572,6 +572,18 @@
 				"url": "{{url}}"
 			},
 			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "8c5f3776-ea58-4bc3-b32c-82861ec3de1a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
