@@ -574,14 +574,22 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "getAllJobs",
 			"id": "8c5f3776-ea58-4bc3-b32c-82861ec3de1a",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query Query {\r\n  getAllJobs {\r\n    _id\r\n    Tracker {\r\n      _id\r\n    }\r\n    Lane {\r\n      _id\r\n    }\r\n    Broker {\r\n      _id\r\n    }\r\n    bilty {\r\n      biltyDate\r\n      biltyDocument\r\n      biltyNumber\r\n      isInformationComplete\r\n      kantaDocument\r\n      lcNumber\r\n      loloDocument\r\n      seal\r\n    }\r\n    DriverAssignedBy {\r\n      _id\r\n    }\r\n    DriverMatchedBy {\r\n      _id\r\n    }\r\n    JobStatus {\r\n      _id\r\n      status\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    JobStatusHistory {\r\n      _id\r\n      status\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    Journeys {\r\n      _id\r\n      toOrderLocation {\r\n        locationType\r\n        steps\r\n      }\r\n      fromOrderLocation {\r\n        steps\r\n        locationType\r\n      }\r\n      DriverStatusHistories {\r\n        _id\r\n        JourneyId\r\n        DriverStatusJourneys {\r\n          _id\r\n          type\r\n          UserId\r\n          \r\n          formattedAddress\r\n          status\r\n          comment\r\n          createdAt\r\n          updatedAt\r\n        }\r\n        createdBy {\r\n          _id\r\n        }\r\n        status\r\n        createdAt\r\n        updatedAt\r\n      }\r\n      next\r\n      steps\r\n    }\r\n    Supplier {\r\n      _id\r\n    }\r\n    Quotations {\r\n      _id\r\n    }\r\n    Payments {\r\n      _id\r\n    }\r\n    EditHistory {\r\n      foreign_id\r\n      tableName\r\n      userName\r\n      action\r\n      oldValues\r\n      newValues\r\n      updatedColumns\r\n      createdAt\r\n    }\r\n    createdThrough {\r\n      versionCode\r\n      versionName\r\n      userPlatform\r\n    }\r\n    Movement {\r\n      _id\r\n      Job {\r\n        _id\r\n      }\r\n      movementType\r\n      subMovementType\r\n      \r\n    }\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": "{{url}}"
 			},
 			"response": []
 		}
