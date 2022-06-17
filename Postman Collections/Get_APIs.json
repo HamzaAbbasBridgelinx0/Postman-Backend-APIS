@@ -568,7 +568,8 @@
 						"query": "query Query {\r\n  getAllDrivers {\r\n    _id\r\n    name\r\n    phoneNumber\r\n    BrokerId\r\n    SupplierId\r\n    isBlocked\r\n    driverType\r\n    platformInfo {\r\n      versionCode\r\n      versionName\r\n      userPlatform\r\n    }\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
 						"variables": ""
 					}
-				}
+				},
+				"url": "{{url}}"
 			},
 			"response": []
 		}
