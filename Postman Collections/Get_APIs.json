@@ -594,7 +594,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "getAllLanesRates",
 			"id": "d98750a1-6f46-4b20-a085-7372e1b5c4a2",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
