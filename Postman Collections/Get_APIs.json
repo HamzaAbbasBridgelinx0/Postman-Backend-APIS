@@ -621,7 +621,15 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query GetAllVehicles {\n  getAllVehicles {\n    _id\n    BrokerId\n    SupplierId\n    registrationNumber\n    isFiction\n    horsePower\n    manufacturerName\n    payloadWeight\n    hasSpareTools\n    startingOdometerReading\n    vehicleLength\n    vehicleType\n    vehicleSubType\n    vehicleVariant\n    makeYear\n    FreightManagerId\n    OwnerId\n    onboardingDate\n    createdAt\n    updatedAt\n  }\n}",
+						"variables": ""
+					}
+				},
+				"url": "{{url}}"
 			},
 			"response": []
 		}
