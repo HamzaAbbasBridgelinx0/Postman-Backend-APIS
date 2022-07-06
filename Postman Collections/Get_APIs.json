@@ -369,7 +369,7 @@
 						"variables": ""
 					}
 				},
-				"url": "https://backend.dev.bridgelinxpk.com/graphql"
+				"url": "{{url}}"
 			},
 			"response": []
 		},
