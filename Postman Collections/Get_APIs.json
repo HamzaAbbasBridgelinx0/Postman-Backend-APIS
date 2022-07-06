@@ -414,7 +414,7 @@
 			"response": []
 		},
 		{
-			"name": "getAllOrdersByType",
+			"name": "getAllOrdersByTypeForImport",
 			"id": "aa5fdcc1-e6e5-4730-8e73-63f6108109b0",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
