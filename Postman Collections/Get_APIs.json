@@ -205,7 +205,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "query GetAllSuppliers {\r\n  getAllSuppliers {\r\n    _id\r\n    isBlocked\r\n    code\r\n    isSuspended\r\n    # PotentialDrivers {\r\n    #   _id\r\n    #   BrokerId\r\n    #   SupplierId\r\n    #   status\r\n    #   createdAt\r\n    #   cost\r\n    # }\r\n    # linkedBrokers {\r\n    #   _id\r\n    #   isBlocked\r\n    #   type\r\n    #   versionCode\r\n    #   versionName\r\n    #   isSuspended\r\n    #   createdAt\r\n    # }\r\n    # ImportExportOrders {\r\n    #   _id\r\n    # }\r\n    # LongHaulOrders {\r\n    #   _id\r\n    # }\r\n    # Regions {\r\n    #   _id\r\n    #   name\r\n    #   Locations {\r\n    #     _id\r\n    #     formattedAddress\r\n    #     additionalDetails\r\n    #     Region {\r\n    #       _id\r\n    #       name\r\n    #       createdAt\r\n    #       updatedAt\r\n    #     }\r\n    #     createdAt\r\n    #     updatedAt\r\n    #   }\r\n    #   createdAt\r\n    #   updatedAt\r\n    # }\r\n    User {\r\n      _id\r\n      firstName\r\n      lastName\r\n      phoneNumber\r\n      email\r\n      createdAt\r\n    }\r\n    type\r\n    versionCode\r\n    versionName\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
+						"query": "query GetAllSuppliers {\r\n  getAllSuppliers {\r\n    _id\r\n    isBlocked\r\n    code\r\n    isSuspended\r\n    User {\r\n      _id\r\n      firstName\r\n      lastName\r\n      phoneNumber\r\n      email\r\n      createdAt\r\n    }\r\n    type\r\n    versionCode\r\n    versionName\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
 						"variables": ""
 					}
 				},
