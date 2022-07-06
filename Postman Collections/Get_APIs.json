@@ -125,7 +125,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "query GetAllDriverStatusHistory {\r\n  getAllDriverStatusHistory {\r\n    _id\r\n    OrderId\r\n    DriverStatusJourneys {\r\n      _id\r\n      User {\r\n        _id\r\n        firstName\r\n        lastName\r\n        phoneNumber\r\n        UserType {\r\n          _id\r\n          userType\r\n        }\r\n        createdAt\r\n      }\r\n      type\r\n      coordinates {\r\n        lat\r\n        lng\r\n      }\r\n      formattedAddress\r\n      status\r\n      comment\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    createdBy {\r\n      _id\r\n      firstName\r\n      lastName\r\n      phoneNumber\r\n      email\r\n      profileImage\r\n      notifToken\r\n      cnic\r\n      UserType {\r\n        _id\r\n        userType\r\n      }\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    status\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
+						"query": "query GetAllDriverStatusHistory {\r\n  getAllDriverStatusHistory {\r\n    _id\r\n    JourneyId\r\n    DriverStatusJourneys {\r\n      _id\r\n      UserId\r\n      type\r\n      coordinates {\r\n        lat\r\n        lng\r\n      }\r\n      formattedAddress\r\n      status\r\n      comment\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    createdBy {\r\n      _id\r\n      firstName\r\n      lastName\r\n      phoneNumber\r\n      email\r\n      profileImage\r\n      cnic\r\n      UserType {\r\n        _id\r\n        userType\r\n      }\r\n      createdAt\r\n      updatedAt\r\n    }\r\n    status\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
 						"variables": ""
 					}
 				},
