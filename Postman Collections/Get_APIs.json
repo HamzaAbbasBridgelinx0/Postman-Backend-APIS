@@ -145,7 +145,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "query GetAllDriverStatusJourney {\r\n  getAllDriverStatusJourney {\r\n    _id\r\n    type\r\n    User {\r\n      _id\r\n      firstName\r\n      lastName\r\n      phoneNumber\r\n      createdAt\r\n      UserType {\r\n        userType\r\n        _id\r\n      }\r\n    }\r\n    formattedAddress\r\n    coordinates {\r\n      lat\r\n      lng\r\n    }\r\n    status\r\n    comment\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
+						"query": "query GetAllDriverStatusJourney {\r\n  getAllDriverStatusJourney {\r\n    _id\r\n    type\r\n    UserId\r\n    formattedAddress\r\n    coordinates {\r\n      lat\r\n      lng\r\n    }\r\n    status\r\n    comment\r\n    createdAt\r\n    updatedAt\r\n  }\r\n}",
 						"variables": ""
 					}
 				},
