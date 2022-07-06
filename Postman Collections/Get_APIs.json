@@ -285,11 +285,11 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "query GetAllOrderStatuses {\r\n  getAllOrderStatuses {\r\n    _id\r\n    OrderId\r\n    internalStatus\r\n    status\r\n    createdAt\r\n  }\r\n}",
+						"query": "query GetAllOrderStatuses {\r\n  getAllOrderStatuses {\r\n    _id\r\n    JobOrderId\r\n    status\r\n    createdAt\r\n  }\r\n}",
 						"variables": ""
 					}
 				},
-				"url": "https://backend.dev.bridgelinxpk.com/graphql"
+				"url": "{{url}}"
 			},
 			"response": []
 		},
